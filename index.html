@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a596702574.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- <header class="intro">
+        <img src="images/newi.svg.svg"  class="intro-img">
+        <h1 class="intro-heading">
+            "Hii!! I am"
+            <span class="name">Mitali Shende</span>
+        </h1>
+    </header> -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/download (2).jfif" class="logo"> -->
+                <h1 style="text-align:left; color:rgb(206, 241, 5); font-size: 100px;"">I AM DEVELOPER</h1>
+                <ul id="sidemenu">
+                    <li><a href=" #header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <!-- <li><a href="#">Resources</a></li> -->
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hiiii,<br> I am </br><br><span>Mitali</span></br></h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- -----about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic2.jpeg">
+
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, numquam! Quaerat, atque fugiat!
+                        Perspiciatis doloremque voluptate accusamus, debitis molestias velit expedita voluptas id porro
+                        ratione suscipit deserunt omnis? Repudiandae, alias.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+
+                            <li><span>Programming Languages</span><br>C, C++, PYTHON</li>
+                            <!-- <li><span>Python</span></li> -->
+                            <li><span>Web technologies</span><br>HTML, CSS, JS, BOOTSTRAP</li>
+                            <li><span>Javascript Technologies</span><br>ReactJS, NodeJS</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+
+                            <li><span>B.Tech</span><br>Shri Guru Gobind Singhji Institute Of Engineering and Technology,
+                                Nanded
+                                B. Tech in Information Technology<br></li>
+                            <li><span>Higher Secondary Education</span><br>M.K.H Sancheti Public school & Junior College
+                            </li>
+                            <li><span>Secondary School Education</span><br>Bhavan's B.P Vidya Mandir Shrikrishna nagar
+                                Nagpur</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----projects---- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work3.jfif">
+                    <div class="layer">
+                        <h3>Inventory Management System</h3>
+                        <p>This project is a complete dsektop based application design,
+                            a guide to designing a database in MySql</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+
+
+                </div>
+                <div class="work">
+                    <img src="images/work4.jfif">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>A Portfolio is a great way to show off your skills to potential employers.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+
+    <!-- ---contact--- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mitaliaug2002@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9021469066</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Mitali resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Meassage"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                    </form>
+
+
+
+                </div>
+            </div> 
+        </div>
+
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right="0";
+
+
+        }
+        function closemenu()
+        {
+            sidemenu.style.right="-200";
+            
+
+        }
+    </script>
+</body>
+
+</html>
